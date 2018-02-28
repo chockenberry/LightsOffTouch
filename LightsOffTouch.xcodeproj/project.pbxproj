@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* LightsOffTouchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LightsOffTouchAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		4468FB040E06F6B600CA0D49 /* puzzles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4468FB030E06F6B600CA0D49 /* puzzles.plist */; };
+		4468FB190E06F7AB00CA0D49 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4468FB170E06F7AB00CA0D49 /* Default.png */; };
+		4468FB1A0E06F7AB00CA0D49 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4468FB180E06F7AB00CA0D49 /* Icon.png */; };
+		449ED3AD0DF9F31D003B8713 /* LOButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED3990DF9F31D003B8713 /* LOButtonView.m */; };
+		449ED3AE0DF9F31D003B8713 /* LOGlareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED39B0DF9F31D003B8713 /* LOGlareView.m */; };
+		449ED3AF0DF9F31D003B8713 /* LODoneButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED39D0DF9F31D003B8713 /* LODoneButtonView.m */; };
+		449ED3B00DF9F31D003B8713 /* LOInfoButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED39F0DF9F31D003B8713 /* LOInfoButtonView.m */; };
+		449ED3B10DF9F31D003B8713 /* LOHighlightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED3A30DF9F31D003B8713 /* LOHighlightView.m */; };
+		449ED3B20DF9F31D003B8713 /* LOResetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED3A40DF9F31D003B8713 /* LOResetView.m */; };
+		449ED3B30DF9F31D003B8713 /* LOButtonGlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED3A50DF9F31D003B8713 /* LOButtonGlowView.m */; };
+		449ED3B40DF9F31D003B8713 /* LOInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED3A70DF9F31D003B8713 /* LOInfoView.m */; };
+		449ED3B50DF9F31D003B8713 /* LOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 449ED3A90DF9F31D003B8713 /* LOView.m */; };
+		44CABF080DF9F84200D934FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CABF070DF9F84200D934FD /* CoreGraphics.framework */; };
+		44CABFDB0DF9FF4E00D934FD /* lo-background-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFCB0DF9FF4E00D934FD /* lo-background-info.png */; };
+		44CABFDC0DF9FF4E00D934FD /* lo-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFCC0DF9FF4E00D934FD /* lo-background.png */; };
+		44CABFDD0DF9FF4E00D934FD /* lo-button-done-press.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFCD0DF9FF4E00D934FD /* lo-button-done-press.png */; };
+		44CABFDE0DF9FF4E00D934FD /* lo-button-done.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFCE0DF9FF4E00D934FD /* lo-button-done.png */; };
+		44CABFDF0DF9FF4E00D934FD /* lo-button-fullglow.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFCF0DF9FF4E00D934FD /* lo-button-fullglow.png */; };
+		44CABFE00DF9FF4E00D934FD /* lo-button-glare.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD00DF9FF4E00D934FD /* lo-button-glare.png */; };
+		44CABFE10DF9FF4E00D934FD /* lo-button-info-press.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD10DF9FF4E00D934FD /* lo-button-info-press.png */; };
+		44CABFE20DF9FF4E00D934FD /* lo-button-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD20DF9FF4E00D934FD /* lo-button-info.png */; };
+		44CABFE30DF9FF4E00D934FD /* lo-button-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD30DF9FF4E00D934FD /* lo-button-off.png */; };
+		44CABFE40DF9FF4E00D934FD /* lo-button-on-press.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD40DF9FF4E00D934FD /* lo-button-on-press.png */; };
+		44CABFE50DF9FF4E00D934FD /* lo-button-press.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD50DF9FF4E00D934FD /* lo-button-press.png */; };
+		44CABFE60DF9FF4E00D934FD /* lo-button-reset-press.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD60DF9FF4E00D934FD /* lo-button-reset-press.png */; };
+		44CABFE70DF9FF4E00D934FD /* lo-button-reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD70DF9FF4E00D934FD /* lo-button-reset.png */; };
+		44CABFE80DF9FF4E00D934FD /* lo-glowpress.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD80DF9FF4E00D934FD /* lo-glowpress.png */; };
+		44CABFE90DF9FF4E00D934FD /* lo-logoglow.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CABFD90DF9FF4E00D934FD /* lo-logoglow.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* LightsOffTouchAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightsOffTouchAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* LightsOffTouchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightsOffTouchAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Lights Off.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lights Off.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* LightsOffTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightsOffTouch_Prefix.pch; sourceTree = "<group>"; };
+		4468FB030E06F6B600CA0D49 /* puzzles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = puzzles.plist; sourceTree = "<group>"; };
+		4468FB170E06F7AB00CA0D49 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
+		4468FB180E06F7AB00CA0D49 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
+		449ED3990DF9F31D003B8713 /* LOButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOButtonView.m; sourceTree = "<group>"; };
+		449ED39A0DF9F31D003B8713 /* LODoneButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LODoneButtonView.h; sourceTree = "<group>"; };
+		449ED39B0DF9F31D003B8713 /* LOGlareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOGlareView.m; sourceTree = "<group>"; };
+		449ED39C0DF9F31D003B8713 /* LOButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOButtonView.h; sourceTree = "<group>"; };
+		449ED39D0DF9F31D003B8713 /* LODoneButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LODoneButtonView.m; sourceTree = "<group>"; };
+		449ED39E0DF9F31D003B8713 /* LOInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOInfoView.h; sourceTree = "<group>"; };
+		449ED39F0DF9F31D003B8713 /* LOInfoButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOInfoButtonView.m; sourceTree = "<group>"; };
+		449ED3A00DF9F31D003B8713 /* LOButtonGlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOButtonGlowView.h; sourceTree = "<group>"; };
+		449ED3A10DF9F31D003B8713 /* LOHighlightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOHighlightView.h; sourceTree = "<group>"; };
+		449ED3A20DF9F31D003B8713 /* LOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOView.h; sourceTree = "<group>"; };
+		449ED3A30DF9F31D003B8713 /* LOHighlightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOHighlightView.m; sourceTree = "<group>"; };
+		449ED3A40DF9F31D003B8713 /* LOResetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOResetView.m; sourceTree = "<group>"; };
+		449ED3A50DF9F31D003B8713 /* LOButtonGlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOButtonGlowView.m; sourceTree = "<group>"; };
+		449ED3A70DF9F31D003B8713 /* LOInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOInfoView.m; sourceTree = "<group>"; };
+		449ED3A80DF9F31D003B8713 /* LOResetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOResetView.h; sourceTree = "<group>"; };
+		449ED3A90DF9F31D003B8713 /* LOView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOView.m; sourceTree = "<group>"; };
+		449ED3AB0DF9F31D003B8713 /* LOGlareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOGlareView.h; sourceTree = "<group>"; };
+		449ED3AC0DF9F31D003B8713 /* LOInfoButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOInfoButtonView.h; sourceTree = "<group>"; };
+		44CABF070DF9F84200D934FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44CABFCB0DF9FF4E00D934FD /* lo-background-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-background-info.png"; path = "Images/lo-background-info.png"; sourceTree = "<group>"; };
+		44CABFCC0DF9FF4E00D934FD /* lo-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-background.png"; path = "Images/lo-background.png"; sourceTree = "<group>"; };
+		44CABFCD0DF9FF4E00D934FD /* lo-button-done-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-done-press.png"; path = "Images/lo-button-done-press.png"; sourceTree = "<group>"; };
+		44CABFCE0DF9FF4E00D934FD /* lo-button-done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-done.png"; path = "Images/lo-button-done.png"; sourceTree = "<group>"; };
+		44CABFCF0DF9FF4E00D934FD /* lo-button-fullglow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-fullglow.png"; path = "Images/lo-button-fullglow.png"; sourceTree = "<group>"; };
+		44CABFD00DF9FF4E00D934FD /* lo-button-glare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-glare.png"; path = "Images/lo-button-glare.png"; sourceTree = "<group>"; };
+		44CABFD10DF9FF4E00D934FD /* lo-button-info-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-info-press.png"; path = "Images/lo-button-info-press.png"; sourceTree = "<group>"; };
+		44CABFD20DF9FF4E00D934FD /* lo-button-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-info.png"; path = "Images/lo-button-info.png"; sourceTree = "<group>"; };
+		44CABFD30DF9FF4E00D934FD /* lo-button-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-off.png"; path = "Images/lo-button-off.png"; sourceTree = "<group>"; };
+		44CABFD40DF9FF4E00D934FD /* lo-button-on-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-on-press.png"; path = "Images/lo-button-on-press.png"; sourceTree = "<group>"; };
+		44CABFD50DF9FF4E00D934FD /* lo-button-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-press.png"; path = "Images/lo-button-press.png"; sourceTree = "<group>"; };
+		44CABFD60DF9FF4E00D934FD /* lo-button-reset-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-reset-press.png"; path = "Images/lo-button-reset-press.png"; sourceTree = "<group>"; };
+		44CABFD70DF9FF4E00D934FD /* lo-button-reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-button-reset.png"; path = "Images/lo-button-reset.png"; sourceTree = "<group>"; };
+		44CABFD80DF9FF4E00D934FD /* lo-glowpress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-glowpress.png"; path = "Images/lo-glowpress.png"; sourceTree = "<group>"; };
+		44CABFD90DF9FF4E00D934FD /* lo-logoglow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lo-logoglow.png"; path = "Images/lo-logoglow.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				44CABF080DF9F84200D934FD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* LightsOffTouchAppDelegate.h */,
+				1D3623250D0F684500981E51 /* LightsOffTouchAppDelegate.m */,
+				449ED39C0DF9F31D003B8713 /* LOButtonView.h */,
+				449ED3990DF9F31D003B8713 /* LOButtonView.m */,
+				449ED39A0DF9F31D003B8713 /* LODoneButtonView.h */,
+				449ED39D0DF9F31D003B8713 /* LODoneButtonView.m */,
+				449ED3AC0DF9F31D003B8713 /* LOInfoButtonView.h */,
+				449ED39F0DF9F31D003B8713 /* LOInfoButtonView.m */,
+				449ED3A00DF9F31D003B8713 /* LOButtonGlowView.h */,
+				449ED3A50DF9F31D003B8713 /* LOButtonGlowView.m */,
+				449ED3AB0DF9F31D003B8713 /* LOGlareView.h */,
+				449ED39B0DF9F31D003B8713 /* LOGlareView.m */,
+				449ED39E0DF9F31D003B8713 /* LOInfoView.h */,
+				449ED3A70DF9F31D003B8713 /* LOInfoView.m */,
+				449ED3A10DF9F31D003B8713 /* LOHighlightView.h */,
+				449ED3A30DF9F31D003B8713 /* LOHighlightView.m */,
+				449ED3A20DF9F31D003B8713 /* LOView.h */,
+				449ED3A90DF9F31D003B8713 /* LOView.m */,
+				449ED3A80DF9F31D003B8713 /* LOResetView.h */,
+				449ED3A40DF9F31D003B8713 /* LOResetView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Lights Off.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* LightsOffTouch_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44CABEE10DF9F59300D934FD /* Images */,
+				4468FB030E06F6B600CA0D49 /* puzzles.plist */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				44CABF070DF9F84200D934FD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44CABEE10DF9F59300D934FD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4468FB170E06F7AB00CA0D49 /* Default.png */,
+				4468FB180E06F7AB00CA0D49 /* Icon.png */,
+				44CABFCB0DF9FF4E00D934FD /* lo-background-info.png */,
+				44CABFCC0DF9FF4E00D934FD /* lo-background.png */,
+				44CABFCD0DF9FF4E00D934FD /* lo-button-done-press.png */,
+				44CABFCE0DF9FF4E00D934FD /* lo-button-done.png */,
+				44CABFCF0DF9FF4E00D934FD /* lo-button-fullglow.png */,
+				44CABFD00DF9FF4E00D934FD /* lo-button-glare.png */,
+				44CABFD10DF9FF4E00D934FD /* lo-button-info-press.png */,
+				44CABFD20DF9FF4E00D934FD /* lo-button-info.png */,
+				44CABFD30DF9FF4E00D934FD /* lo-button-off.png */,
+				44CABFD40DF9FF4E00D934FD /* lo-button-on-press.png */,
+				44CABFD50DF9FF4E00D934FD /* lo-button-press.png */,
+				44CABFD60DF9FF4E00D934FD /* lo-button-reset-press.png */,
+				44CABFD70DF9FF4E00D934FD /* lo-button-reset.png */,
+				44CABFD80DF9FF4E00D934FD /* lo-glowpress.png */,
+				44CABFD90DF9FF4E00D934FD /* lo-logoglow.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* LightsOffTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LightsOffTouch" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightsOffTouch;
+			productName = LightsOffTouch;
+			productReference = 1D6058910D05DD3D006BFB54 /* Lights Off.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LightsOffTouch" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* LightsOffTouch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CABFDB0DF9FF4E00D934FD /* lo-background-info.png in Resources */,
+				44CABFDC0DF9FF4E00D934FD /* lo-background.png in Resources */,
+				44CABFDD0DF9FF4E00D934FD /* lo-button-done-press.png in Resources */,
+				44CABFDE0DF9FF4E00D934FD /* lo-button-done.png in Resources */,
+				44CABFDF0DF9FF4E00D934FD /* lo-button-fullglow.png in Resources */,
+				44CABFE00DF9FF4E00D934FD /* lo-button-glare.png in Resources */,
+				44CABFE10DF9FF4E00D934FD /* lo-button-info-press.png in Resources */,
+				44CABFE20DF9FF4E00D934FD /* lo-button-info.png in Resources */,
+				44CABFE30DF9FF4E00D934FD /* lo-button-off.png in Resources */,
+				44CABFE40DF9FF4E00D934FD /* lo-button-on-press.png in Resources */,
+				44CABFE50DF9FF4E00D934FD /* lo-button-press.png in Resources */,
+				44CABFE60DF9FF4E00D934FD /* lo-button-reset-press.png in Resources */,
+				44CABFE70DF9FF4E00D934FD /* lo-button-reset.png in Resources */,
+				44CABFE80DF9FF4E00D934FD /* lo-glowpress.png in Resources */,
+				44CABFE90DF9FF4E00D934FD /* lo-logoglow.png in Resources */,
+				4468FB040E06F6B600CA0D49 /* puzzles.plist in Resources */,
+				4468FB190E06F7AB00CA0D49 /* Default.png in Resources */,
+				4468FB1A0E06F7AB00CA0D49 /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* LightsOffTouchAppDelegate.m in Sources */,
+				449ED3AD0DF9F31D003B8713 /* LOButtonView.m in Sources */,
+				449ED3AE0DF9F31D003B8713 /* LOGlareView.m in Sources */,
+				449ED3AF0DF9F31D003B8713 /* LODoneButtonView.m in Sources */,
+				449ED3B00DF9F31D003B8713 /* LOInfoButtonView.m in Sources */,
+				449ED3B10DF9F31D003B8713 /* LOHighlightView.m in Sources */,
+				449ED3B20DF9F31D003B8713 /* LOResetView.m in Sources */,
+				449ED3B30DF9F31D003B8713 /* LOButtonGlowView.m in Sources */,
+				449ED3B40DF9F31D003B8713 /* LOInfoView.m in Sources */,
+				449ED3B50DF9F31D003B8713 /* LOView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = LN92RWTA45;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LightsOffTouch_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LightsOff;
+				PRODUCT_NAME = "Lights Off";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = LN92RWTA45;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LightsOffTouch_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LightsOff;
+				PRODUCT_NAME = "Lights Off";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LightsOffTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LightsOffTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
