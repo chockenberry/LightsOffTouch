@@ -25,9 +25,6 @@
 
 @implementation LightsOffTouchAppDelegate
 
-//@synthesize window;
-//@synthesize view;
-
 /*
  During the Jailbreak era, no one had any idea what they were doing. The original LOController is reinterpreted here
  as both an application delegate and a view controller. See what I mean?

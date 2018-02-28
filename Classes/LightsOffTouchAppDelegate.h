@@ -24,9 +24,6 @@
     NSString *currentLevelString;
 }
 
-//@property (nonatomic, retain) UIWindow *window;
-//@property (nonatomic, retain) LOView *view;
-
 - (NSString *)currentLevelString;
 - (BOOL)isAcceptingInput;
 - (void)pressButtonView:(LOButtonView *)buttonView;
