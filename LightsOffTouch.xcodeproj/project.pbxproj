@@ -11,6 +11,7 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		4464DBD620478507005E2DD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4464DBD520478507005E2DD8 /* QuartzCore.framework */; };
 		4468FB040E06F6B600CA0D49 /* puzzles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4468FB030E06F6B600CA0D49 /* puzzles.plist */; };
 		4468FB190E06F7AB00CA0D49 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4468FB170E06F7AB00CA0D49 /* Default.png */; };
 		4468FB1A0E06F7AB00CA0D49 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4468FB180E06F7AB00CA0D49 /* Icon.png */; };
@@ -49,6 +50,7 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* LightsOffTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightsOffTouch_Prefix.pch; sourceTree = "<group>"; };
+		4464DBD520478507005E2DD8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4468FB030E06F6B600CA0D49 /* puzzles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = puzzles.plist; sourceTree = "<group>"; };
 		4468FB170E06F7AB00CA0D49 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
 		4468FB180E06F7AB00CA0D49 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4464DBD620478507005E2DD8 /* QuartzCore.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				44CABF080DF9F84200D934FD /* CoreGraphics.framework in Frameworks */,
@@ -172,6 +175,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4464DBD520478507005E2DD8 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				44CABF070DF9F84200D934FD /* CoreGraphics.framework */,
