@@ -69,6 +69,8 @@
 	// to look a little less ridiculous on the iPhone X, simulate the old school status bar from early (non-fullscreen) versions of iOS
 	[view setFrame:frame];
 	UIView *statusBarView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, bounds.size.width, STATUS_BAR_HEIGHT)] autorelease];
+#if 1
+	// simulate gray status bar - I *think* this was the one used in the original version
 	statusBarView.backgroundColor = [UIColor colorWithRed:0.349 green:0.388 blue:0.392 alpha:1.000];
 	CAGradientLayer *gradientLayer = [CAGradientLayer layer];
 	CGRect gradientFrame = [statusBarView bounds];
@@ -78,8 +80,13 @@
 	UIColor *bottomColor = [UIColor colorWithRed:0.741 green:0.780 blue:0.784 alpha:1.0];
 	[gradientLayer setColors:[NSArray arrayWithObjects:(id)[topColor CGColor], (id)[bottomColor CGColor], nil]];
 	[statusBarView.layer addSublayer:gradientLayer];
-	[window insertSubview:statusBarView aboveSubview:view];
 	[application setStatusBarStyle: UIStatusBarStyleDefault];
+#else
+	// simulate black status bar - fallback for my failing memory
+	statusBarView.backgroundColor = [UIColor colorWithWhite:0.200 alpha:1.0];
+	[application setStatusBarStyle: UIStatusBarStyleLightContent];
+#endif
+	[window insertSubview:statusBarView aboveSubview:view];
 	
     NSTimeInterval totalDelay;
     [self _showLightFlourishWithTotalDelay:&totalDelay];
