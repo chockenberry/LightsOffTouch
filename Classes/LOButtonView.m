@@ -20,7 +20,9 @@
             static UIImage *buttonGlowImage;
             if (!buttonGlowImage)
                 buttonGlowImage = [[UIImage imageNamed:@"lo-button-fullglow.png"] retain];
-            [buttonGlowImage drawInRect:CGRectInset(rect, -8.0, -10.0)];
+			CGRect drawRect = CGRectInset(rect, -8.0, -7.0);
+			drawRect.origin.y -= 3.0;
+			[buttonGlowImage drawInRect:drawRect];
         }
     } else {
         if (!lightOn) {

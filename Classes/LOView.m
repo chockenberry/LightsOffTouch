@@ -78,7 +78,7 @@
     }
     
     // add glowing logo
-    UIImageView *glowingLogoView = [[[UIImageView alloc] initWithFrame:CGRectMake(17.0, 0.0, 288.0, 47.0)] autorelease];
+    UIImageView *glowingLogoView = [[[UIImageView alloc] initWithFrame:CGRectMake(17.0, 0.0, 285.0, 50.0)] autorelease];
     [glowingLogoView setImage:[UIImage imageNamed:@"lo-logoglow.png"]];
     [self addSubview:glowingLogoView];
     [UIView beginAnimations:nil context:NULL];
