@@ -70,8 +70,13 @@
 	[view setFrame:frame];
 	UIView *statusBarView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, bounds.size.width, STATUS_BAR_HEIGHT)] autorelease];
 #if 1
-	// simulate gray status bar - I *think* this was the one used in the original version
-	statusBarView.backgroundColor = [UIColor colorWithRed:0.349 green:0.388 blue:0.392 alpha:1.000];
+	// simulate a gray status bar
+	//
+	// there's no evidence of which kind of status was used in the Jailbreak code (no Info.plist)
+	// but my failing memory remembers that it was gray in in the first version
+	// also, the gray version was the default, and there was no documentation explaining how to change it
+	
+	[statusBarView setBackgroundColor:[UIColor colorWithRed:0.349 green:0.388 blue:0.392 alpha:1.000]];
 	CAGradientLayer *gradientLayer = [CAGradientLayer layer];
 	CGRect gradientFrame = [statusBarView bounds];
 	gradientFrame.size.height -= 1.0;
@@ -79,11 +84,15 @@
 	UIColor *topColor = [UIColor colorWithRed:0.933 green:0.965 blue:0.976 alpha:1.0];
 	UIColor *bottomColor = [UIColor colorWithRed:0.741 green:0.780 blue:0.784 alpha:1.0];
 	[gradientLayer setColors:[NSArray arrayWithObjects:(id)[topColor CGColor], (id)[bottomColor CGColor], nil]];
-	[statusBarView.layer addSublayer:gradientLayer];
+	[[statusBarView layer] addSublayer:gradientLayer];
 	[application setStatusBarStyle: UIStatusBarStyleDefault];
 #else
-	// simulate black status bar - fallback for my failing memory
-	statusBarView.backgroundColor = [UIColor colorWithWhite:0.200 alpha:1.0];
+	// simulate a black status bar
+	//
+	// this image shows the black status bar: http://www.artofadambetts.com/weblog/2007/08/lights-off-first-native-iphone-game/
+	// but the level counter is also different than this original version, so it's not clear if this is a mockup or a screenshot
+	
+	statusBarView.backgroundColor = [UIColor colorWithWhite:0.255 alpha:1.0];
 	[application setStatusBarStyle: UIStatusBarStyleLightContent];
 #endif
 	[window insertSubview:statusBarView aboveSubview:view];
