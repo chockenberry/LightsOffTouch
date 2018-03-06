@@ -312,7 +312,7 @@
 				GCC_PREFIX_HEADER = LightsOffTouch_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LightsOff;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasnewman.LightsOff;
 				PRODUCT_NAME = "Lights Off";
 			};
 			name = Debug;
@@ -327,7 +327,7 @@
 				GCC_PREFIX_HEADER = LightsOffTouch_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LightsOff;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasnewman.LightsOff;
 				PRODUCT_NAME = "Lights Off";
 			};
 			name = Release;
